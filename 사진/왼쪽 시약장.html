@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>시약 목록</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    a { text-decoration: none; color: #007acc; font-size: 18px; }
+    a:hover { text-decoration: underline; }
+
+    
+
+  </style>
+  <a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `왼쪽 시약장 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</head>
+<body>
+  <h1>시약 목록</h1>
+
+  <h2>왼쪽 시약장</h2>
+
+  <h3>4층 (유기계)</h3>
+  <ul>
+    <li><a data-id="페놀레드용액">페놀레드용액</a></li>
+    <li><a data-id="염화메틸렌">염화메틸렌</a></li>
+    <li><a data-id="만능지시약">만능지시약</a></li>
+    <li><a data-id="양배추지시약">양배추지시약</a></li>
+    <li><a data-id="석유에테르">석유에테르</a></li>
+    <li><a data-id="페놀프탈레인용액">페놀프탈레인용액</a></li>
+    <li><a data-id="시트르산">시트르산</a></li>
+    <li><a data-id="n-헥산">n-헥산</a></li>
+    <li><a data-id="1.6헥산다이아민(헥사메틸렌다이아민)">1.6헥산다이아민(헥사메틸렌다이아민)</a></li>
+    <li><a data-id="아세트산(99.7%)99.7%)"></a></li>
+    <li><a data-id="과산화수소수">과산화수소수</a></li>
+    <li><a data-id="에탄올">에탄올</a></li>
+    <li><a data-id="0.1M아세트산용액">0.1M아세트산용액</a></li>
+    <li><a data-id="메틸오렌지용액">메틸오렌지용액</a></li>
+    <li><a data-id="아세톤">아세톤</a></li>
+    <li><a data-id="메틸레드용액">메틸레드용액</a></li>
+    <li><a data-id="BTB용액">BTB용액</a></li>
+    <li><a data-id="1%아이오딘화칼륨용액">1%아이오딘화칼륨용액</a></li>
+    <li><a data-id="김자액">김자액</a></li>
+    <li><a data-id="2-프로판올">2-프로판올99.5%</a></li>
+  </ul>
+
+  <h3>3층 (유기계)</h3>
+  <ul>
+    <li><a data-id="아세톤">아세톤</a></li>
+    <li><a data-id="염화메틸렌(다이클로로메테인)">염화메틸렌(다이클로로메테인)</a></li>
+    <li><a data-id="25%암모니아수">25%암모니아수</a></li>
+    <li><a data-id="스테아린산">스테아린산</a></li>
+    <li><a data-id="에틸아세테이트">에틸아세테이트</a></li>
+    <li><a data-id="아이오딘산칼륨">아이오딘산칼륨</a></li>
+    <li><a data-id="중아황산나트륨">중아황산나트륨</a></li>
+    <li><a data-id="메틸알코올(메탄올)">메틸알코올(메탄올)</a></li>
+    <li><a data-id="이소프로필알코올">이소프로필알코올</a></li>
+    <li><a data-id="에탄올">에탄올</a></li>
+    <li><a data-id="0.1M수산화나트륨용액">0.1M수산화나트륨용액</a></li>
+    <li><a data-id="옥살산2수화물">옥살산2수화물</a></li>
+    <li><a data-id="염화아디프산염화메틸렌용액">염화아디프산염화메틸렌용액</a></li>
+    <li><a data-id="무수아세트산">무수아세트산</a></li>
+    <li><a data-id="사염화탄소">사염화탄소</a></li>
+    <li><a data-id="루미놀">루미놀</a></li>
+    <li><a data-id="나트륨옥살산염">나트륨옥살산염</a></li>
+  </ul>
+
+  <h3>2층 (무기계)</h3>
+  <ul>
+    <li><a data-id="암모니아수">암모니아수</a></li>
+    <li><a data-id="염산">염산</a></li>
+    <li><a data-id="중크롬산칼륨">중크롬산칼륨</a></li>
+    <li><a data-id="수산화나트륨">수산화나트륨</a></li>
+    <li><a data-id="묽은염산">묽은염산</a></li>
+    <li><a data-id="묽은과산화수소">묽은과산화수소</a></li>
+    <li><a data-id="칼륨페리시안화합물">칼륨페리시안화합물</a></li>
+    <li><a data-id="아황산수소나트륨">아황산수소나트륨</a></li>
+    <li><a data-id="수산화철">수산화철</a></li>
+    <li><a data-id="수산화바륨">수산화바륨</a></li>
+    <li><a data-id="염화구리이수화물">염화구리이수화물</a></li>
+    <li><a data-id="과산화수소">과산화수소</a></li>
+    <li><a data-id="초파리등장액">초파리등장액</a></li>
+    <li><a data-id="아세트올세인">아세트올세인</a></li>
+    <li><a data-id="롯셀염">롯셀염</a></li>
+    <li><a data-id="수산화마그네슘">수산화마그네슘</a></li>
+    <li><a data-id="페토시안화칼륨">페토시안화칼륨</a></li>
+    <li><a data-id="리튬스틱">리튬스틱</li>
+    <li><a data-id="np-600">np-600</a></li>
+    <li><a data-id="살리실산">살리실산</a></li>
+  </ul>
+
+  <h3>1층 (무기계)</h3>
+  <ul>
+    <li><a data-id="과망간산칼륨">과망간산칼륨</a></li>
+    <li><a data-id="알루미늄분말">알루미늄분말</a></li>
+    <li><a data-id="이산화티타늄">이산화티타늄</a></li>
+    <li><a data-id="아연분말">아연분말</a></li>
+    <li><a data-id="티오시안산칼륨">티오시안산칼륨</a></li>
+    <li><a data-id="염소산칼륨">염소산칼륨</a></li>
+    <li><a data-id="크롬산칼륨">크롬산칼륨</a></li>
+    <li><a data-id="티오황산나트륨5수화물">티오황산나트륨5수화물</a></li>
+    <li><a data-id="마그네슘">마그네슘</a></li>
+    <li><a data-id="질산암모늄">질산암모늄</a></li>
+    <li><a data-id="아이오딘">아이오딘</a></li>
+    <li><a data-id="리튬">리튬</a></li>
+    <li><a data-id="염산">염산</a></li>
+    <li><a data-id="아이오딘화칼륨">아이오딘화칼륨</a></li>
+    <li><a data-id="마그네슘/아연/알루미늄 리본">마그네슘/아연/알루미늄 리본</a></li>
+  </ul>
+
+  <p><a href="index.html">←메인으로</a></p>
+
+  <a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `왼쪽 시약장 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</body>
+</html>

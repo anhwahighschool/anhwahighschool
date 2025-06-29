@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>시약 목록</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    a { text-decoration: none; color: #007acc; font-size: 18px; }
+    a:hover { text-decoration: underline; }
+
+    
+
+  </style>
+  <a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `오른쪽 시약장 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</head>
+<body>
+  <h1>시약 목록</h1>
+  <ul>
+<h1>오른쪽 시약장 왼쪽 칸</h1>
+<ul>
+  <h2>5층(생명과학용 액체)</h2>
+    <ul>
+      <li><a data-id="글리세롤">글리세롤</a></li>
+<li><a data-id="무수초산(무수아세트산)">무수초산(무수아세트산)</a></li>
+<li><a data-id="글리신용액(1%)">글리신용액(1%)</a></li>
+<li><a data-id="글리세린">글리세린</a></li>
+<li><a data-id="식물성 글리세린">식물성 글리세린</a></li>
+<li><a data-id="수크로스용액">수크로스(사카로스)용액</a></li>
+<li><a data-id="인산(85%)">인산(85%)</a></li>
+<li><a data-id="닌히드린용액">닌히드린용액</a></li>
+<li><a data-id="요소용액(1%)">요소용액(1%)</a></li>
+<li><a data-id="파라핀 용액">파라핀 용액</a></li>
+<li><a data-id="표준완충용액(pH3, pH4, pH6, pH7, pH10)">표준완충용액(pH3, pH4, pH6, pH7, pH10)</a></li>
+<li><a data-id="TAE 완충용액">TAE 완충용액</a></li>
+<li><a data-id="설탕용액">설탕용액</a></li>
+<li><a data-id="묽은암모니아수">묽은암모니아수</a></li>
+<li><a data-id="아세트산(99.5%)">아세트산(99.5%)</a></li>
+<li><a data-id="링게솔루션">링게솔루션</a></li>
+<li><a data-id="acetate-edta 완충용액">acetate-edta 완충용액</a></li>
+<li><a data-id="전기영동완충용액">전기영동완충용액</a></li>
+<li><a data-id="탈색제용액">탈색제용액</a></li>
+<li><a data-id="계면활성제">계면활성제</a></li>
+    </ul>
+  </li>
+  <h2>4층(산, 단백질, 생명과학용 고체)</h2>
+
+    <ul>
+      <li><a data-id="송화가루">송화가루</a></li>
+<li><a data-id="유산균/대장균 배양 배지">유산균/대장균 배양 배지</a></li>
+<li><a data-id="고흡수성수지">고흡수성수지</a></li>
+<li><a data-id="건조효모">건조효모</a></li>
+<li><a data-id="알부민">알부민</a></li>
+<li><a data-id="아세트산">아세트산</a></li>
+<li><a data-id="아디픽산">아디픽산</a></li>
+<li><a data-id="살리실산">살리실산</a></li>
+<li><a data-id="구연산나트륨2수화물">구연산나트륨2수화물</a></li>
+<li><a data-id="말론산">말론산</a></li>
+<li><a data-id="시트르산">시트르산</a></li>
+<li><a data-id="아세트산암모늄">아세트산암모늄</a></li>
+<li><a data-id="프탈산무수물">프탈산무수물</a></li>
+<li><a data-id="아세트산무수물">아세트산무수물</a></li>
+<li><a data-id="아세틸살리실산">아세틸살리실산</a></li>
+<li><a data-id="나프탈렌">나프탈렌</a></li>
+<li><a data-id="구연산">구연산</a></li>
+<li><a data-id="아세트산(초산)나트륨3수화물">아세트산(초산)나트륨3수화물</a></li>
+<li><a data-id="붕산">붕산</a></li>
+<li><a data-id="레조르시놀">레조르시놀</a></li>
+<li><a data-id="알긴산나트륨">알긴산나트륨</a></li>
+<li><a data-id="카제인">카제인</a></li>
+    </ul>
+  </li>
+  <h2>3층(탄수화물)</h2>
+
+    <ul>
+    <li><a data-id="녹말">녹말</a></li>
+<li><a data-id="한천분말(아가)">한천분말(아가)</a></li>
+<li><a data-id="포도당">포도당</a></li>
+<li><a data-id="셀룰로오스">셀룰로오스</a></li>
+<li><a data-id="젖당">젖당</a></li>
+<li><a data-id="아카시아분말">아카시아분말</a></li>
+<li><a data-id="덱스트린">덱스트린</a></li>
+<li><a data-id="옥수수전분">옥수수전분</a></li>
+<li><a data-id="젤라틴">젤라틴</a></li>
+    </ul>
+  </li>
+  <h2>2층(지시약, 수용액)</h2>
+
+    <ul>
+     <li><a data-id="0.1M 묽은염산">0.1M 묽은염산</a></li>
+<li><a data-id="석회수">석회수</a></li>
+<li><a data-id="0.1M 수산화나트륨 용액">0.1M수산화나트륨 용액</a></li>
+<li><a data-id="수단3 용액">수단3 용액</a></li>
+<li><a data-id="과산화수소">과산화수소</a></li>
+<li><a data-id="에틸알코올(에탄올)">에틸알코올(에탄올)</a></li>
+<li><a data-id="암모니아수">암모니아수</a></li>
+<li><a data-id="황산">황산</a></li>
+<li><a data-id="염화제2구리용액(1%,10%)">염화제2구리용액(1%,10%)</a></li>
+<li><a data-id="아이오딘-아이오딘화 칼륨 용액">아이오딘-아이오딘화 칼륨 용액</a></li>
+<li><a data-id="메틸 오렌지">메틸 오렌지</a></li>
+<li><a data-id="페놀프탈레인">페놀프탈레인</a></li>
+<li><a data-id="BTB">BTB</a></li>
+<li><a data-id="메틸렌 블루">메틸렌 블루</a></li>
+<li><a data-id="아황산나트륨 수용액">아황산나트륨 수용액</a></li>
+<li><a data-id="간수용액">간수용액</a></li>
+<li><a data-id="베네딕트 용액">베네딕트 용액</a></li>
+<li><a data-id="인디고 카민 용액">인디고 카민 용액</a></li>
+<li><a data-id="포도당 용액">포도당 용액</a></li>
+<li><a data-id="염화2철용액">염화2철용액</a></li>
+    </ul>
+  </li>
+
+  <h2>1층(브로민화, 아이오딘화, 기타)</h2>
+    <ul>
+      <li><a data-id="석회석">석회석</a></li>
+<li><a data-id="유동 파라핀">유동 파라핀</a></li>
+<li><a data-id="과망가니즈산 칼륨">과망가니즈산 칼륨</a></li>
+<li><a data-id="브로민화 나트륨">브로민화 나트륨</a></li>
+<li><a data-id="활성탄">활성탄</a></li>
+<li><a data-id="아이오딘화나트륨">아이오딘화나트륨</a></li>
+<li><a data-id="아이오딘화나트륨 용액(5%)">아이오딘화나트륨 용액(5%)</a></li>
+<li><a data-id="아이오딘화칼륨">아이오딘화칼륨</a></li>
+<li><a data-id="아이오딘산 칼륨">아이오딘산 칼륨</a></li>
+<li><a data-id="나프탈렌">나프탈렌</a></li>
+    </ul>
+  </li>
+</ul>
+<h1>오른쪽 시약장 오른쪽 칸</h1>
+
+  <section>
+    <h2>5층 (인산염)</h2>
+    <ul>
+      <li><a data-id="인산암모늄">인산암모늄</a></li>
+      <li><a data-id="제일인산칼륨">제일인산칼륨</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4층 (탄산염, 질산염)</h2>
+    <ul>
+      <li><a data-id="질산암모늄">질산암모늄</a></li>
+<li><a data-id="질산제2철9수화물">질산제2철9수화물</a></li>
+<li><a data-id="질산구리">질산구리</a></li>
+<li><a data-id="질산납">질산납</a></li>
+<li><a data-id="질산나트륨">질산나트륨</a></li>
+<li><a data-id="탄산칼슘">탄산칼슘</a></li>
+<li><a data-id="무수탄산나트륨(탄산나트륨)">무수탄산나트륨(탄산나트륨)</a></li>
+<li><a data-id="질산칼륨">질산칼륨</a></li>
+<li><a data-id="중탄산나트륨">중탄산나트륨</a></li>
+<li><a data-id="질산니켈6수화물">질산니켈6수화물</a></li>
+<li><a data-id="질산리튬">질산리튬</a></li>
+<li><a data-id="탄산수소나트륨(중조)">탄산수소나트륨(중조)</a></li>
+  </section>
+
+  <section>
+    <h2>3층 (황산염)</h2>
+    <ul>
+      <li><a data-id="황산망간1수화물">황산망간1수화물</a></li>
+<li><a data-id="황산수소나트륨">황산수소나트륨</a></li>
+<li><a data-id="황산구리">황산구리</a></li>
+<li><a data-id="황산나트륨">황산나트륨</a></li>
+<li><a data-id="티오황산나트륨5수화물">티오황산나트륨5수화물</a></li>
+<li><a data-id="무수황산마그네슘">무수황산마그네슘</a></li>
+<li><a data-id="황화나트륨수화물">황화나트륨수화물</a></li>
+<li><a data-id="황산마그네슘">황산마그네슘</a></li>
+<li><a data-id="알루미늄칼륨황산염">알루미늄칼륨황산염</a></li>
+<li><a data-id="황산제2구리5수화물">황산제2구리5수화물</a></li>
+<li><a data-id="황산아연7수화물">황산아연7수화물</a></li>
+<li><a data-id="황산칼륨">황산칼륨</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2층 (염화염)</h2>
+    <ul>
+     <li><a data-id="염화칼슘">염화칼슘</a></li>
+<li><a data-id="염화나트륨">염화나트륨</a></li>
+<li><a data-id="염화암모늄">염화암모늄</a></li>
+<li><a data-id="염화칼륨">염화칼륨</a></li>
+<li><a data-id="염화마그네슘">염화마그네슘</a></li>
+<li><a data-id="염화망간4수화물">염화망간4수화물</a></li>
+<li><a data-id="염화코발트">염화코발트</a></li>
+<li><a data-id="염화바륨2수화물">염화바륨2수화물</a></li>
+<li><a data-id="염화구리">염화구리</a></li>
+<li><a data-id="염화제이철6수화물">염화제이철6수화물</a></li>
+<li><a data-id="염화제일철4수화물">염화제일철4수화물</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>1층 (수산화염, 산화물)</h2>
+    <ul>
+      <li><a data-id="이산화망간">이산화망간</a></li>
+<li><a data-id="수산화 나트륨">수산화 나트륨</a></li>
+<li><a data-id="산화칼슘">산화칼슘</a></li>
+<li><a data-id="산화아연">산화아연</a></li>
+<li><a data-id="수산화 칼슘">수산화 칼슘</a></li>
+<li><a data-id="수산화칼륨">수산화칼륨</a></li>
+<li><a data-id="바륨수산화물옥타수화물">바륨수산화물 옥타수화물</a></li>
+    </ul>
+  </section>
+<a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `오른쪽 시약장 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</body>
+</html>

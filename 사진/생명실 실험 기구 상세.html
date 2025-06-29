@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>생명실 실험 기구 상세</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    a { text-decoration: none; color: #007acc; }
+  </style>
+</head>
+<body>
+  <h1 id="title">기구 이름</h1>
+  <p id="description">설명 로딩 중...</p>
+  <img id="image" src="" alt="기구 이미지" style="width:300px; height:auto; display:none;">
+  <a href="생명실 실험 기구.html">← 목록으로 돌아가기</a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    const descriptions = {
+      "현미경": {
+    description: "작은 물체를 확대하여 관찰하는 장치로, 생물학적 샘플이나 미세한 구조를 연구하는 데 사용됩니다.<br>위치:3번 칸",
+    image: "사진/현미경.jpg"
+  },
+ 
+  "눈금 유리병": {
+    description: "대량의 액체를 측정하고 보관할 수 있는 유리병으로, 주로 실험실에서 사용됩니다.<br>위치:6번 칸",
+    image: "사진/눈금 유리병.jpg"
+  },
+  
+  
+  "비커": {
+    description: "액체의 양을 측정하고 혼합하는 데 사용되는 기구로, 다양한 실험에서 활용됩니다.<br>위치:8번 칸",
+    image: "사진/비커.jpg"
+  
+  },
+  "큐네시험관": {
+    description: "효모의 발효 과정을 관찰하고 이산화탄소 발생량을 측정하는 데 사용되는 실험 기구입니다.<br>위치:10번 칸",
+    image: "사진/큐네시험관.jpg"
+  },
+  "디지털 항온수조": {
+    description: "온도를 정밀하게 조절할 수 있는 장비로, 생명과학 및 화학 실험에서 샘플을 일정 온도로 유지하는 데 사용됩니다.<br>위치:10번 칸",
+    image: "사진/디지털 항온수조.jpg"
+  },
+  "유리 시험관": {
+    description: "다양한 화학 반응을 수행하거나 샘플을 보관하는 데 사용되는 유리관입니다.<br>위치:10번 칸",
+    image: "사진/유리시험관.jpg"
+  },
+  "귀온도계": {
+    description: "귀에서 체온을 측정하는 기구로, 빠르고 정확한 체온 측정이 가능합니다.<br>위치:11번 칸",
+    image: "사진/귀온도계.jpg"
+  },
+  "수동 카운터": {
+    description: "실험 중 발생하는 사건이나 물체의 수를 세는 데 사용되는 기구입니다.<br>위치:12번 칸",
+    image: "사진/수동 카운터.jpg"
+  },
+  "유리 페트리접시": {
+    description: "세균 배양이나 샘플 관찰에 사용되는 평평한 유리 접시입니다.<br>위치:12번 칸",
+    image: "사진/유리 페트리접시.jpg"
+  },
+  "플라스틱 페트리접시": {
+    description: "세균 배양이나 샘플 관찰에 사용되는 평평한 플라스틱 접시입니다.<br>위치:12번 칸",
+    image: "사진/플라스틱 페트리접시.jpg"
+  },
+  "voc측정기": {
+    description: "휘발성 유기 화합물(VOC)의 농도를 측정하는 기구로, 환경 모니터링에 사용됩니다.<br>위치:13번 칸",
+    image: "사진/voc측정기.jpg"
+  },
+  "LED-투과조명기": {
+    description: "샘플을 관찰하기 위해 빛을 투과시키는 장비로, 주로 생물학적 샘플 관찰에 사용됩니다.<br>위치:13번 칸",
+    image: "사진/LED-투과조명기.jpg"
+  },
+  "전기영동 장치": {
+    description: "DNA, RNA, 단백질 등을 분리하고 분석하는 데 사용되는 장비입니다.<br>위치:13번 칸",
+    image: "사진/전기영동 장치.jpg"
+  },
+  "전기영동 부품": {
+    description: "전기영동장치의 작동에 필요한 다양한 부품들입니다.<br>위치:13번 칸",
+    image: "사진/전기영동 부품.jpg"
+  },
+  "PH버퍼파우더": {
+    description: "pH를 조절하기 위해 사용되는 화학 물질로, 실험에서 pH를 일정하게 유지하는 데 필요합니다.<br>위치:14번 칸",
+    image: "사진/pH버퍼파우더.jpg"
+  },
+  "이산화탄소 측정기": {
+    description: "대기 중 이산화탄소 농도를 측정하는 기구로, 환경 연구에 사용됩니다.<br>위치:14번 칸",
+    image: "사진/이산화탄소 측정기.jpg"
+  },
+  "디지털 당도계": {
+    description: "액체의 당도(당의 농도)를 측정하는 기구로, 식품 산업에서 주로 사용됩니다.<br>위치:14번 칸",
+    image: "사진/디지털 당도계.jpg"
+  },
+  "청진기": {
+    description: "심장 및 호흡 소리를 듣기 위해 사용되는 의료 기구입니다.<br>위치:14번 칸",
+    image: "사진/청진기.jpg"
+  },
+  "당도측정기": {
+    description: "액체의 당 농도를 측정하는 기구로, 주로 음료 산업에서 사용됩니다.<br>위치:14번 칸",
+    image: "사진/당도측정기.jpg"
+  },
+  "마이크로미터": {
+    description: "액체의 당 농도를 측정하는 기구로, 주로 음료 산업에서 사용됩니다.<br>위치:14번 칸",
+    image: "사진/마이크로미터.jpg"
+  },
+  "허파실험장치": {
+    description: "호흡 및 폐 기능을 연구하는 데 사용되는 장비입니다.<br>위치:16번 칸",
+    image: "사진/허파실험장치.jpg"
+  },
+  "스포이드": {
+    description: "소량의 액체를 정확하게 측정하고 옮기는 데 사용되는 기구입니다.<br>위치:18번 칸",
+    image: "사진/스포이드.jpg"
+  }
+      }
+    
+
+    if (descriptions[name]) {
+      document.getElementById("title").textContent = name;
+      document.getElementById("description").innerHTML = descriptions[name].description;
+      document.getElementById("image").src = descriptions[name].image;
+      document.getElementById("image").style.display = "block";
+    } else {
+      document.getElementById("description").textContent = "이 기구에 대한 설명이 없습니다.";
+    }
+  </script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>생명실 실험 기구 목록</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 20px; }
+    a { text-decoration: none; color: #007acc; font-size: 18px; }
+    a:hover { text-decoration: underline; }
+  </style>
+  <a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `생명실 실험 기구 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</head>
+<body>
+  <h1>생명실 실험 기구 목록</h1>
+  <ul>
+    3
+    <li><a data-id="현미경">현미경</a></li>
+
+    4
+    <li><a data-id="현미경">현미경</a></li>
+
+    5
+    <li><a data-id="현미경">현미경</a></li>
+
+    6
+    
+    <li><a data-id="눈금 유리병">눈금 유리병</a></li>
+
+    8
+    <li><a data-id="비커">비커</a></li>
+   
+    10
+    <li><a data-id="큐네시험관">큐네시험관</a></li>
+    <li><a data-id="디지털 항온수조">디지털 항온수조</a></li>
+    <li><a data-id="유리 시험관">유리 시험관</a></li>
+    
+    11
+    <li><a data-id="귀온도계">귀온도계</a></li>
+
+    12
+    <li><a data-id="수동 카운터">수동 카운터</a></li>
+    
+    <li><a data-id="유리 페트리접시">유리 페트리접시</a></li>
+    
+    <li><a data-id="플라스틱 페트리접시">플라스틱 페트리접시</a></li>
+    
+    13
+    <li><a data-id="voc측정기">voc측정기</a></li>
+    <li><a data-id="LED-투과조명기">LED-투과조명기</a></li> 
+    <li><a data-id="전기영동 장치">전기영동 장치</a></li> 
+    <li><a data-id="전기영동 부품">전기영동 부품</a></li>
+
+    14
+    <li><a data-id="PH버퍼파우더">PH버퍼파우더</a></li>
+    <li><a data-id="이산화탄소 측정기">이산화탄소 측정기</a></li>
+    <li><a data-id="디지털 당도계">디지털 당도계</a></li>
+    <li><a data-id="청진기">청진기</a></li>
+    <li><a data-id="당도측정기">당도측정기</a></li>
+    <li><a data-id="마이크로미터">마이크로미터</a></li>
+    
+    16
+    <li><a data-id="허파실험장치">허파실험장치</a></li>
+    
+    18
+    <li><a data-id="스포이드">스포이드</a></li>
+  </ul>
+
+  <a href="index.html"><h3>← 메인으로</h3></a>
+  <script>
+  document.querySelectorAll('a[data-id]').forEach(link => {
+    link.addEventListener('click', () => {
+      const name = link.getAttribute('data-id');
+       window.location.href = `생명실 실험 기구 상세.html?name=${encodeURIComponent(name)}`;
+    });
+  });
+</script>
+</body>
+</html>
